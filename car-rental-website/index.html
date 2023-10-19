@@ -1,0 +1,221 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Car Rent</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="name">
+                <h1 class="page-name">car rent</h1>
+            </div>
+            <div class="menu">
+                <div class="img-menu">
+                    <img src="./images/icon-menu.svg" class="menu-icon">
+                </div>
+                <div class="pages">
+                    <ul class="list">
+                        <li>
+                             <a class='page' href="#">Home</a>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li>
+                            <a class='page' href="./cars.html">Cars & Prices</a>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li>
+                            <a id='my-booking' class='page'href="#">My booking</a>
+                            <button class='sign-up'>Log in</button>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li>
+                            <a class='page'href="#contacts">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- END OF HEADER -->
+    <main class="main-index">
+        <h3 class="slogan">Let's find a perfect <span id='car-word'>car</span>for your adventure</h3>
+        <!-- search part -->
+        <section class="searching-part">
+            <div class="search-window">
+                <form class="searching-form">
+                    <div class="pick-up">
+                        <label for="pick-up">Pick-up location</label>
+                        <input type="text" id="city-name" placeholder="Enter name of the city" required>
+                    </div>
+                    <div class="diff-location">
+                        <input type="checkbox">
+                        <p id="diff-location">Return car to another location</p>
+                    </div>
+                    <div class="pick-up-date">
+                        <label for="pick-up-date">Rent Start</label>
+                        <input type="date" id="pick-up-date" required>
+                        <input type="time">
+                    </div>
+                    <div class="drop-off-date">
+                        <label for="drop-off-date">Rent End</label>
+                        <input type="date" id="drop-off-date" required>
+                        <input type="time">
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox">
+                        <p id="age" aria-required="true">Drivers age is more than 25</p>
+                    </div>
+                    <div class="search-btn">
+                        <input type="submit" value="search" id="search-btn">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- section reviews-->
+        <h1 class="review-header">Reviews</h1>
+        
+        <section class="rew-section">
+            <div class="left-arrow">
+                <img src="./images/arrow.png"  class='arrow left'alt="arrow left" id="left">
+            </div>
+            <div class="review-part">
+            <div class="review hide-review" id="0">
+                <h1 class="user-name">Peter</h1>
+                <div class="stars">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                </div> 
+                <p class="review-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem explicabo enim veniam itaque? Provident quas tempore veniam facere, ad accusantium!</p>
+                <hr>
+            </div>
+            <div class="review" id="1">
+                <h1 class="user-name">Kristina</h1>
+                <div class="stars">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                    <img src="./images/star.png" alt="star" class="star"> 
+                </div> 
+                <p class="review-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem explicabo enim veniam itaque? Provident quas tempore veniam facere, ad accusantium!</p>
+                <hr>
+            </div>
+            <div class="review">
+                <h1 class="user-name">David</h1>
+                <div class="stars">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                </div>
+                <p class="review-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem explicabo enim veniam itaque? Provident quas tempore veniam facere, ad accusantium!</p>
+                <hr>
+            </div>
+            <div class="review">
+                <h1 class="user-name">Chewie</h1>
+                <div class="stars">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                    <img src="./images/star.png" alt="star" class="star">
+                    <img src="./images/star.png" alt="star" class="star">
+                </div> 
+                <p class="review-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem explicabo enim veniam itaque? Provident quas tempore veniam facere, ad accusantium!</p>
+            </div>
+
+            <!-- this review will show? not-->
+            <div class="review next-review" >
+                <h1 class="user-name">Chilli</h1>
+                <div class="stars">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                    <img src="./images/star-full.png" alt="star" class="star">
+                    <img src="./images/star.png" alt="star" class="star">
+                </div> 
+                <p class="review-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem explicabo enim veniam itaque? Provident quas tempore veniam facere, ad accusantium!</p>
+                <hr>
+            </div>
+            <!-- this review will show? not-->
+
+            </div>
+            <div class="right-arrow">
+                <img src="./images/right-arrow.png"  class='arrow right'alt="arrow right" id="right">
+            </div>
+        </section>
+        <!-- section contact -->
+        <section class="contacts" id="contacts">
+            <ul class="socials-links">
+                <li class="social">
+                    <a href="tel:123-456-7890" target="_blank" class="fa fa-phone" aria-hidden="true">+421 999 321</a>
+                </li>
+            </ul>
+            <ul class="socials-links">
+                <li class="social">
+                    <a href="mailto: abc@example.com" class="fa fa-envelope"> Email</a>
+                </li>
+            </ul>
+            <ul class="socials-links">
+                <li class="social">
+                    <a href="http://www.facebook.com" target="_blank"  class="fa fa-facebook"> Facebook</a>
+                </a>
+                </li>
+            </ul>
+            <ul class="socials-links">
+                <li class="social">
+                    <a href="http://www.instagram.com" target="_blank"  class="fa fa-instagram"> Instagram</a>
+                </a>
+                </li>
+            </ul>
+            <ul class="socials-links">
+                <li class="social">
+                    <a href="#" class="fa fa-address-card"> Address</a>
+                </li>
+            </ul>
+        </section>
+        <!-- section login -->
+        <section class="login-part" id="login">
+            <div class="login-div">
+                <h2 class="login-header">Login</h2>
+                <form class="login-form">
+                    <input class="username" type="text" placeholder="Insert your username" required> 
+                    <input class='password' type="password" placeholder="Insert your password" minlength="8" required> 
+                    <div class="remember-forgot">
+                        <div class="remember">
+                            <input type="checkbox" id="remember">
+                            <p class="rem-para">remember me</p>
+                        </div>
+                        <div class="forgot">
+                            <a href='#'>Forgot your password?</a>
+                        </div>
+                    </div>
+                    <input class='login-btn' type="submit" value="Log in">
+                    <input class='close-btn' type="submit" value="close">
+                    <div class="not-registered">
+                        <p>Not registered yet?<a href='#' id="create-acc">Create an account</a></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="footer">© 2023 Designed by Viktoria Bystrianska. Icons by <a href="https://icons8.com/" target="_blank">Icons8</a></p>
+    </footer>
+    <!-- <a target="_blank" href="https://icons8.com/icon/19295/star">Star</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+    <script src="app.js"></script>
+</body>
+</html>

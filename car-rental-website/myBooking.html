@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Car Rent</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="name">
+                <h1 class="page-name">car rent</h1>
+            </div>
+            <div class="menu">
+                <div class="img-menu">
+                    <img src="./images/icon-menu.svg" class="menu-icon">
+                </div>
+                <div class="pages">
+                    <ul class="list">
+                        <li>
+                             <a class='page' href="./index.html">Home</a>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li>
+                            <a class='page' href="./cars.html">Cars & Prices</a>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li>
+                            <a id='my-booking' class='page'href="#">My booking</a>
+                            <button class='sign-up'>Log in</button>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li>
+                            <a class='page'href="#contacts">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- END OF HEADER -->
+    <main class="main-booking">
+        <!-- section my booking -->
+        <section class="my-booking">
+            <h1 class="booking-header">your booking</h1>
+            <div class="booking-container">
+                <p class="car-booked">You have booked car: <span class="car-type">Hiundai i20</span></p>
+                <p class="booking-date">Rent start: </p>
+                <p class="booking-date">Rent end: </p>
+            </div>
+        </section>
+        <!-- section contact -->
+        <section class="contacts-booking" id="contacts">
+            <ul class="socials-links">
+                <li class="social">
+                    <a href="tel:123-456-7890" target="_blank" class="fa fa-phone" aria-hidden="true">+421 999 321</a>
+                </li>
+            </ul>
+            <ul class="socials-links">
+                <li class="social">
+                    <a href="mailto: abc@example.com" class="fa fa-envelope"> Email</a>
+                </li>
+            </ul>
+            <ul class="socials-links">
+                <li class="social">
+                    <a href="http://www.facebook.com" target="_blank"  class="fa fa-facebook"> Facebook</a>
+                </a>
+                </li>
+            </ul>
+            <ul class="socials-links">
+                <li class="social">
+                    <a href="http://www.instagram.com" target="_blank"  class="fa fa-instagram"> Instagram</a>
+                </a>
+                </li>
+            </ul>
+            <ul class="socials-links">
+                <li class="social">
+                    <a href="#" class="fa fa-address-card"> Address</a>
+                </li>
+            </ul>
+        </section>
+        <!-- section login -->
+        <section class="login-part" id="login">
+            <div class="login-div">
+                <h2 class="login-header">Login</h2>
+                <form class="login-form">
+                    <input class="username" type="text" placeholder="Insert your username" required> 
+                    <input class='password' type="password" placeholder="Insert your password" required> 
+                    <div class="remember-forgot">
+                        <div class="remember">
+                            <input type="checkbox" id="remember">
+                            <p class="rem-para">remember me</p>
+                        </div>
+                        <div class="forgot">
+                            <a href='#'>Forgot your password?</a>
+                        </div>
+                    </div>
+                    <input class='login-btn' type="submit" value="Log in">
+                    <input class='close-btn' type="submit" value="close">
+                    <div class="not-registered">
+                        <p>Not registered yet?<a href='#' id="create-acc">Create an account</a></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="footer">© 2023 Designed by Viktoria Bystrianska. Icons by <a href="https://icons8.com/" target="_blank">Icons8</a></p>
+    </footer>
+    <!-- <a target="_blank" href="https://icons8.com/icon/19295/star">Star</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+    <script src="app.js"></script>
+</body>
+</html>
